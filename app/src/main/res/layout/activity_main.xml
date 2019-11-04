@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+>
 
 
     <LinearLayout
@@ -17,15 +19,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <TextView
-            android:id="@+id/result_text"
+        <ImageView
+
+            android:id="@+id/dice_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Hello World!"
-            android:textSize="30sp" />
+            app:srcCompat="@drawable/empty_dice"
+            tools:src="@drawable/dice_1"/>
 
         <Button
             android:id="@+id/roll_button"
@@ -39,5 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Count up" />
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
